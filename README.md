@@ -32,12 +32,8 @@
 
 # Design a program to display magic number, accept a number and check it is a magic number or not.
 
-                    public static boolean magicNumber()  
-                    {  
-                    int number=631;
-                    if( ((number - 1) % 9) == 0)  
-                    return true;  
-                    else  
-                    return false;  
-                    }  
-                    }  
+                   int number = 109;
+		if (((number - 1) % 9) == 0)
+			return true;
+		else
+			return false;
