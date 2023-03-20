@@ -21,3 +21,23 @@
             }
             
 # Swap 2 numbers without using 3rd variable
+
+                    int x=5;
+                    int y=7;
+                    x = x + y;   
+                    y = x - y;   
+                    x = x - y;   
+                    System.out.print("X Value:"+ x);
+                    System.out.print("Y Value:"+ y);
+
+# Design a program to display magic number, accept a number and check it is a magic number or not.
+
+                    public static boolean magicNumber()  
+                    {  
+                    int number=631;
+                    if( ((number - 1) % 9) == 0)  
+                    return true;  
+                    else  
+                    return false;  
+                    }  
+                    }  
