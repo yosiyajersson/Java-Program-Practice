@@ -41,7 +41,7 @@
 # Display a L shape * symbol
 
 		for (int i = 0; i < 10; i++) {
-			if (i < 4) {
+			if (i < 5) {
 				System.out.println("*");
 			} else {
 				System.out.print("* ");
