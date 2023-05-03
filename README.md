@@ -357,4 +357,26 @@ public class FirstLetterOfEachWord {
 
 					System.out.println("The sorted list in descending order is: " + sorted);
 				}
+				
+				private static void FindFirstNonRepeatedCharecterFromString() {
+					String str = "yosiya";
+
+					String[] strCharList = str.toLowerCase().split("");
+
+					List<String> strList = Arrays.asList(strCharList);
+
+					Map<String, Long> charCountMap = strList.stream()
+							.collect(Collectors.groupingBy(str1 -> str1, Collectors.counting()));
+
+					System.out.println(charCountMap);
+
+					for(int i=0; i<strList.size(); i++)
+						if (charCountMap.get(strList.get(i)) == 1) {
+
+							System.out.println("The First Non Repeated Charecter is ::" + strList.get(i));
+							break;
+						}
+
+
+				}								
 			}
