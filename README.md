@@ -395,3 +395,28 @@ public class FirstLetterOfEachWord {
 			}
 		    }
 		}
+
+# count of repeated accurance
+
+	public static void main(String[] args) {
+			String input = "aaaacccdddaaacccc";
+			List<String> strList = Arrays.asList(input.split(""));
+			Map<String, Integer> ipCntMap = new HashMap<>();
+			List<Map<String, Integer>> ipCntList = new ArrayList<>();
+			for (int i = 0; i < strList.size(); i++) {
+				if (ipCntMap.containsKey(strList.get(i))) {
+					ipCntMap.put(strList.get(i), ipCntMap.get(strList.get(i)) + 1);
+					if (i == strList.size() - 1) {
+						ipCntList.add(ipCntMap);
+					}
+				} else {
+					if (ipCntMap.size() > 0) {
+						ipCntList.add(ipCntMap);
+						ipCntMap = new HashMap<>();
+					}
+					ipCntMap.put(strList.get(i), 1);
+				}
+			}
+			System.out.println(ipCntList);
+
+		}
