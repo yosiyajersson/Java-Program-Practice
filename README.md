@@ -420,3 +420,26 @@ public class FirstLetterOfEachWord {
 			System.out.println(ipCntList);
 
 		}
+
+# A List contains the values as ("key1~value1","key2~value2") change this list into hashmap key1 as key and value1 as value
+
+		public static void main(String args[]) {
+
+				List<String> lst = new ArrayList<>();
+				lst.add("key1~value1");
+				lst.add("key2~value2");
+
+				Map<String, String> resultmap = new HashMap<>();
+
+				lst.forEach(str -> {
+
+					List<String> subStrList = Arrays.asList(str.split("~"));
+
+					resultmap.put(subStrList.get(0), subStrList.get(1));
+
+				});
+
+				System.out.println(resultmap);
+			}
+
+
