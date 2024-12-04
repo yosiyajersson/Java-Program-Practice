@@ -421,7 +421,7 @@ public class FirstLetterOfEachWord {
 
 		}
 
-# A List contains the values as ("key1~value1","key2~value2") change this list into hashmap key1 as key and value1 as value
+# A List contains the values as ("key1:value1","key2:value2") change this list into hashmap key1 as key and value1 as value
 
 		public static void main(String args[]) {
 
@@ -433,7 +433,7 @@ public class FirstLetterOfEachWord {
 
 				lst.forEach(str -> {
 
-					List<String> subStrList = Arrays.asList(str.split("~"));
+					List<String> subStrList = Arrays.asList(str.split(":"));
 
 					resultmap.put(subStrList.get(0), subStrList.get(1));
 
