@@ -426,8 +426,8 @@ public class FirstLetterOfEachWord {
 		public static void main(String args[]) {
 
 				List<String> lst = new ArrayList<>();
-				lst.add("key1~value1");
-				lst.add("key2~value2");
+				lst.add("key1:value1");
+				lst.add("key2:value2");
 
 				Map<String, String> resultmap = new HashMap<>();
 
